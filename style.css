@@ -1,0 +1,393 @@
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            height: 100vh;
+        }
+        .first-page{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items:center;
+            text-align: center;
+            width: 350px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 20px 20px 10px grey;
+            border: 1px solid black; 
+            position: relative;
+            overflow: hidden;
+            background-image: url(photo/tmlxu71.gif);
+            background-size:cover;
+            background-repeat: no-repeat;
+            color: white;
+        }
+        .details{
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items:center;
+            padding: 20px;
+            padding-top: 8px;
+            border-radius: 10px;
+        }
+        .logo-box{
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+            width: 80%;
+        }
+        .logo > img{
+            width: 100px;
+            height: 100px;
+            border-radius:50%;
+            margin: 10px;
+            margin-bottom: 5px;
+        }
+        .logo-box h2{
+            font-size: 25px;
+            font-weight: bolder;
+            float: left;
+        }
+        .man > img{
+            width: 150px;
+            height: 150px;
+            border-radius:50%;
+            margin: 10px;
+            margin-top: 2px;
+            background-color: white;
+        }
+        .details label{
+            display:inline-block;
+            font-size: 30px;
+            text-align: left;
+            margin: 3px;
+            
+        }
+        .details input{
+            display: inline-block;
+            font-size: 20px;
+            border:none;
+            border-bottom:1px solid white;
+            outline: none;
+            width: 80%;
+            text-align: center;
+            background-color: transparent;
+            color: white;
+        }
+        .ready{
+            display: none;
+        }
+        .readybutton{
+            padding: 10px;
+            width: 200px;
+            height: 50px;
+            box-shadow: 10px 10px 10px grey;
+            border-radius: 8px;
+        }
+        .click {
+            font-size: 20px;
+            font-weight: bold;
+            width: 200px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            transform: scale(1,1);
+            transition: .3s;
+            background-color: white;
+            color: black;
+        }
+        .click:hover{
+            transform: scale(0.9,0.9);
+            background-color: #029442;
+        }
+        /* second-page-start */
+        .second-page{
+            position: absolute;
+            top: 0;
+            left:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:flex-end;
+            width: 350px;
+            height: 500px;
+            border-radius: 10px;
+            transition: 1s;
+            background-image: url(photo/2b4c648136e7af0bbe95557a3a299369.jpg);
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+            color: black;
+           
+        }
+        .option-page{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:flex-end; 
+            position: relative;
+        }
+        .option > h3{
+            margin-left:10px ;
+            padding: 0;
+        }
+        .option{
+                height: 50px; 
+                margin: 5px;
+                display: flex;
+                justify-content:flex-start;
+                align-items:center;
+                border-radius:10px;
+                transform:scale(1,1);
+                transition: .4s;
+                cursor: pointer;
+        }
+        .option:hover{
+            transform:scale(0.8,0.9);
+        }
+        .add{
+            width: 100px;
+            background-color: #FF4A4A;
+        }
+        .dif{
+            width: 140px;
+            background-color: #3B9AE1;
+        }
+        .multi{
+            width: 190px;
+            background-color: #FFCB42;
+        }
+        .div{
+            width: 240px;
+            background-color: #029442;
+        }
+        .mix{
+            width: 290px;
+            background: linear-gradient(#FF4A4A, #3B9AE1,#FFCB42,#029442);
+        }   
+        .ready:checked ~ .second-page{
+            left: 0%;
+        }  
+         /* third-page-start */   
+         .third-page{
+            position: absolute;
+            top: 0;
+            left: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items:center;
+            width: 350px;
+            height: 500px;
+            border-radius: 10px;
+            transition: 1s;
+            background-image: url(photo/d4ef2afdf979b60f422d8f9a7636f3fe.jpg);
+            background-size:100%;
+            background-repeat: no-repeat;
+            background-color: white;
+         }
+         .types{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            margin-left: 50px;
+         }
+         .types > button{
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 20px;
+            margin: 8px;
+            transform: scale(1,1);
+            transition: .4s;
+         }
+         .types > button:hover{
+            transform: scale(0.9,0.9);
+         }
+        .type-photo > img{
+            width: 100px;
+            height: 100px;
+            border-radius:50%;
+            margin: 10px;
+            margin-top:20px ;
+            margin-bottom: 5px; 
+        }
+        /* fourth-page-start */ 
+        .fourth-page{
+            position: absolute;
+            top: 0;
+            left: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            width: 350px;
+            height: 500px;
+            border-radius: 10px;
+            transition: 1s;
+            background-image: url(photo/Ve9W.gif);
+            background-size:cover;
+            background-repeat: no-repeat;
+            color: white;
+        }
+        .qustion-page{
+            padding: 15px;
+            border-radius: 10px;
+            background-color: white;
+            color:black;
+        }
+        .qustionbox{
+            font-size: 25px;
+            font-weight: bold;
+            position: relative;
+        }
+        #ans{
+            font-size: 25px;
+            border: none;
+            width: 90px;
+            border-bottom: 1px solid black;
+            outline: none;
+            text-align: center;
+        }
+        .scorebox{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 10px;
+        }
+        .scorebox > span{
+            font-size: 20px;
+
+        }
+        .countqustion{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            padding: 10px;
+        }
+        .countqustion > span{
+            font-size: 20px;
+
+        }
+        /* Reactionbox */
+        .cor-ans{
+            position: absolute;
+            top:-20%;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #029442;
+            padding: 10px;
+            padding-top: 15px;
+            width: 80%;
+            height: 60px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 1s;
+        }
+        .cor-ans > h3{
+            padding: 0%;
+            margin: 0;
+        }
+        .wro-ans{
+            position: absolute;
+            bottom: 38%;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            width: 80%;
+            height: 130px;
+            display: none;
+            background-color: white;
+            transition: 1s;
+            border-radius: 10px;
+        }
+        .wro-box{
+           font-size:25px;
+           color: black;
+        }
+        .wro-box > span{
+            display:block;
+            padding: 5px;
+        }
+        #next{
+            display: inline-block;
+            width: 100px;
+            height: 35px;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .row{
+            margin-top: 20px;
+        }
+        .row > button{
+            display: inline-block;
+            width:100px;
+            height: 40px;
+            border-radius: 10px;
+            font-size: 20px;
+            margin: 10px!;
+         }
+         /* fifth-page-start */ 
+         .fifth-page{
+            position: absolute;
+            top:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items:center;
+            width: 350px;
+            height: 500px;
+            border-radius: 10px;
+            transition: 1s;
+            background-color:white;
+            background-image: url(photo/6ob.gif);
+            background-size:cover;
+            background-repeat: no-repeat;
+            border: 1px solid black;
+            color: black;
+            
+         }
+         .scoreboard{
+            padding: 10px;
+         }
+         .scoreboard > h1{
+            font-size: 60px;
+         }
+         #scorepage{
+            font-size: 40px;
+         }
+         #player{
+            font-size: 60px;
+            margin: 10px;
+         }
+         .return-option > button{
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 20px;
+            margin: 8px;
+            transform: scale(1,1);
+            transition: .3s;
+         }
+         .return-option > button:hover{
+            transform: scale(0.9,0.9);
+         }
+         .goodluckph > img{
+            width: 80px;
+            height: 80px;
+            margin-top: 20px;
+         }

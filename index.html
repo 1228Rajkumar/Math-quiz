@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="first-page" id="firstpage">
+    <div class="logo-box">
+      <figure class="logo">
+        <img src="photo/math-logo.png">
+      </figure>
+      <h2>MATH QUIZ</h2>
+    </div>
+    <div class="details">
+      <figure class="man">
+        <img src="photo/human.png">
+      </figure>
+      <label>Name</label>
+      <input type="text" id="player-name">
+    </div>
+    <input type="checkbox" id="ready" class="ready" />
+    <label for="ready" class="click" onclick="">Are you ready</label>
+    <div class="second-page" id="secondpage">
+      <div class="option-page">
+        <div class="option add" onclick="operatorgenerate('add')">
+          <h3>Addition</h3>
+        </div>
+        <div class="option dif" onclick="operatorgenerate('dif')">
+          <h3>subtraction</h3>
+        </div>
+        <div class="option multi" onclick="operatorgenerate('multi')">
+          <h3>multiplication</h3>
+        </div>
+        <div class="option div" onclick="operatorgenerate('div')">
+          <h3>division</h3>
+        </div>
+        <div class="option mix" onclick="operatorgenerate('mixture')">
+          <h3>Mixture</h3>
+        </div>
+      </div>
+    </div>
+    <div class="third-page" id="levels">
+      <div class="types">
+        <figure class="type-photo">
+          <img src="photo/mathlogo.jpg" alt="">
+        </figure>
+        <button type="button" onclick="Setvalue('easy')">Easy</button>
+        <button type="button" onclick="Setvalue('medi')">Medium</button>
+        <button type="button" onclick="Setvalue('hard')">Hard</button>
+      </div>
+    </div>
+    <div class="fourth-page" id="gamepage">
+      <div class="qustion-page">
+        <span class="qustionbox" id="questionarea">20 + 24 =</span>
+        <input type="text" id="ans" onclick="hidecorretsugges()">
+      </div>
+      <div class="scorebox">
+        <span>Score :</span>
+        <span id="score">0</span>
+      </div>
+      <div class="countqustion">
+        <span>Question:</span>
+        <span id="ques">0</span><span>/10</span>
+      </div>
+      <div class="row">
+        <button type="button" id="a" onclick="validate()">Confirm</button>
+      </div>
+      <div class="cor-ans" id="correctanswer">
+        <h3>Correct Answer!</h3>
+      </div>
+      <div class="wro-ans" id="wronganswer">
+        <div class="wro-box">
+          <span>Answer is</span>
+          <label id="originalans">0</label>
+        </div>
+        <button id="next" onclick="hidewrongsugges()">Next</button>
+      </div>
+    </div>
+    <div class="fifth-page" id="scorepage">
+      <div class="scoreboard">
+        <label id="player"></label>
+        <h1>Score</h1>
+        <label id="mark">0</label><span>/10</span>
+        <figure class="goodluckph">
+          <img src="photo/thumbs-up_1f44d.gif">
+        </figure>
+        <h3>Thank you</h3>
+      </div>
+      <div class="return-option">
+        <button type="button" onclick="showsecondpage()">play</button>
+        <button type="button" onclick="reload()">Back</button>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
